@@ -51,6 +51,7 @@ public class AutorDAO {
 		return autores;
 	}
 	//esto lo quiero quitar
+	//este es otro comentario
 	public static void addLibro(Autor a, Libro l) {
 		EntityManager em=createEM();
 		em.getTransaction().begin();
