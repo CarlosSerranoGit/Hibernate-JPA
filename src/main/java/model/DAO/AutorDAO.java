@@ -42,6 +42,7 @@ public class AutorDAO {
 	public static List<Autor> selectByName(String name){
 		List<Autor> autores=new ArrayList<Autor>();
 		EntityManager em=createEM();
+		//hola como estás
 		em.getTransaction().begin();
 		TypedQuery<Autor> q=em.createNamedQuery("findByName", Autor.class);
 		q.setParameter("name", name);
