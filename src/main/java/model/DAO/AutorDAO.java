@@ -50,7 +50,7 @@ public class AutorDAO {
 		em.getTransaction().commit();
 		return autores;
 	}
-	
+	//esto lo quiero quitar
 	public static void addLibro(Autor a, Libro l) {
 		EntityManager em=createEM();
 		em.getTransaction().begin();
